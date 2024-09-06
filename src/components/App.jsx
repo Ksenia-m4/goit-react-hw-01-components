@@ -1,6 +1,8 @@
 import user from 'user.json';
+import data from 'data.json';
 
-import { Profile } from './Profile/Profile';
+import { Profile } from './social-profile/Profile';
+import { StatisticsCard } from './statistics/Statistics';
 
 export const App = () => {
   // return (
@@ -18,12 +20,15 @@ export const App = () => {
   //   </div>
   // );
   return (
-    <Profile
-      username={user.username}
-      tag={user.tag}
-      location={user.location}
-      avatar={user.avatar}
-      stats={user.stats}
-    />
+    <>
+      <Profile
+        username={user.username}
+        tag={user.tag}
+        location={user.location}
+        avatar={user.avatar}
+        stats={user.stats}
+      />
+      <StatisticsCard stats={data} title="Upload stats"></StatisticsCard>
+    </>
   );
 };

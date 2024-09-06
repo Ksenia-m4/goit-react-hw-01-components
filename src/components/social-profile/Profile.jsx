@@ -9,7 +9,7 @@ import {
   UserLocation,
   ProfileStats,
   StatsItem,
-  Statslabel,
+  StatsLabel,
   StatsQuantity,
 } from './Profile.styled';
 
@@ -31,15 +31,15 @@ export const Profile = ({
 
       <ProfileStats>
         <StatsItem>
-          <Statslabel>Followers</Statslabel>
+          <StatsLabel>Followers</StatsLabel>
           <StatsQuantity>{followers}</StatsQuantity>
         </StatsItem>
         <StatsItem>
-          <Statslabel>Views</Statslabel>
+          <StatsLabel>Views</StatsLabel>
           <StatsQuantity>{views}</StatsQuantity>
         </StatsItem>
         <StatsItem>
-          <Statslabel>Likes</Statslabel>
+          <StatsLabel>Likes</StatsLabel>
           <StatsQuantity>{likes}</StatsQuantity>
         </StatsItem>
       </ProfileStats>
@@ -56,5 +56,5 @@ Profile.propTypes = {
     followers: PropTypes.number.isRequired,
     views: PropTypes.number.isRequired,
     likes: PropTypes.number.isRequired,
-  }),
+  }).isRequired,
 };

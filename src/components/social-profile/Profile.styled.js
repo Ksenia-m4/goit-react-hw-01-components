@@ -56,7 +56,7 @@ export const StatsItem = styled.li`
   }
 `;
 
-export const Statslabel = styled.span`
+export const StatsLabel = styled.span`
   display: block;
   font-size: 12px;
   color: #777;
