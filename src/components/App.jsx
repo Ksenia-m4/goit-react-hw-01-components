@@ -1,8 +1,10 @@
 import user from 'user.json';
 import data from 'data.json';
+import friends from 'friends.json';
 
 import { Profile } from './social-profile/Profile';
 import { StatisticsCard } from './statistics/Statistics';
+import { FriendList } from './friend-list/FriendList';
 
 export const App = () => {
   // return (
@@ -28,7 +30,8 @@ export const App = () => {
         avatar={user.avatar}
         stats={user.stats}
       />
-      <StatisticsCard stats={data} title="Upload stats"></StatisticsCard>
+      <StatisticsCard stats={data} title="Upload stats" />
+      <FriendList friends={friends} />
     </>
   );
 };
