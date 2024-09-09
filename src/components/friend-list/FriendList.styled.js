@@ -1,8 +1,11 @@
-import styled, { createGlobalStyle } from 'styled-components';
+import styled from 'styled-components';
 
 const List = styled.ul`
-  width: 200px;
-  margin: 0 auto;
+  width: 220px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 0;
+  margin-bottom: 20px;
   padding: 0;
   list-style: none;
 `;

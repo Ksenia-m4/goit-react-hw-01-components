@@ -6,7 +6,10 @@ const Section = styled.div`
 
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
-  margin: 20px auto;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 0;
+  margin-bottom: 20px;
 `;
 
 const SectionTitle = styled.h2`
