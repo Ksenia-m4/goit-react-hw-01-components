@@ -45,3 +45,4 @@ const Status = styled.span`
 `;
 
 export { List, Avatar, Name, Item, Status };
+
