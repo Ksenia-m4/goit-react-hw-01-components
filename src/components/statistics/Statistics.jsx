@@ -9,9 +9,9 @@ import {
   StatList,
 } from './Statistics.styled';
 
-import getRandomHexColor from '../../utils/colorGenerator';
+import getRandomHexColor from '../../Utils/colorGenerator';
 
-export const StatisticsCard = ({ stats, title }) => {
+export const Statistics = ({ stats, title }) => {
   return (
     <Section>
       {title && <SectionTitle>{title}</SectionTitle>}
@@ -29,13 +29,13 @@ export const StatisticsCard = ({ stats, title }) => {
   );
 };
 
-StatisticsCard.propTypes = {
+Statistics.propTypes = {
   title: PropTypes.string,
   stats: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.string.isRequired,
       label: PropTypes.string.isRequired,
       percentage: PropTypes.number.isRequired,
-    })
+    }).isRequired
   ).isRequired,
 };
