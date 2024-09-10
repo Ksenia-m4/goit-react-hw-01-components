@@ -4,7 +4,7 @@ import friends from './../Data/friends.json';
 import transactions from './../Data/transactions.json';
 
 import { Profile } from './SocialProfile/Profile.jsx';
-import { Statistics } from './Statistics/Statistics.jsx';
+import { Statistics } from './Statistics/Statistics';
 import { FriendList } from './FriendList/FriendList.jsx';
 import { TransactionHistory } from './TransactionHistory/TransactionHistory.jsx';
 
